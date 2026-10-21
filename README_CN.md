@@ -9,14 +9,14 @@
         \/                    \/          \/                   \/     \/
 ```
 
-# active-chrome-mac-skill
+# chrome-mac-agent-skill
 
 **专为 AI Agent 打造的 macOS Google Chrome 原生会话控制技能包。免重启 Chrome，保留全部用户登录态。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![macOS: Supported](https://img.shields.io/badge/macOS-Supported-brightgreen?style=flat-square)](https://apple.com/macos)
-[![Agent Skill](https://img.shields.io/badge/Agent-Skill-blueviolet?style=flat-square)](https://github.com/aicode915/active-chrome-mac-skill)
-[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-success?style=flat-square)](https://github.com/aicode915/active-chrome-mac-skill)
+[![Agent Skill](https://img.shields.io/badge/Agent-Skill-blueviolet?style=flat-square)](https://github.com/aicode915/chrome-mac-agent-skill)
+[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-success?style=flat-square)](https://github.com/aicode915/chrome-mac-agent-skill)
 
 [English](./README.md) • [简体中文](./README_CN.md)
 
@@ -35,7 +35,7 @@
 
 ---
 
-## 💡 解决方案：`active-chrome-mac-skill`
+## 💡 解决方案：`chrome-mac-agent-skill`
 
 本技能包直接利用 macOS 原生系统级 AppleScript 与后台正在运行的真实 Chrome 进程通信：
 
@@ -49,7 +49,7 @@
 
 ## 📊 与现有方案对比
 
-| 功能特性 | Playwright / Puppeteer | 远程调试端口 (CDP) | `active-chrome-mac-skill` 🚀 |
+| 功能特性 | Playwright / Puppeteer | 远程调试端口 (CDP) | `chrome-mac-agent-skill` 🚀 |
 | :--- | :---: | :---: | :---: |
 | **保留用户已登录会话** | ❌ 否 (空白隔离环境) | ⚠️ 仅当启动时开启了端口 | **✅ 是 (100% 完美保留)** |
 | **需要关闭/重启 Chrome** | ❌ 需要 | ❌ 需要关闭已有 Chrome | **✅ 绝对不需要** |
@@ -65,18 +65,18 @@
 将本仓库克隆或复制到项目的技能目录下：
 ```bash
 mkdir -p .agents/skills
-git clone https://github.com/aicode915/active-chrome-mac-skill.git .agents/skills/active-chrome-control
+git clone https://github.com/aicode915/chrome-mac-agent-skill.git .agents/skills/active-chrome-control
 ```
 
 ### 方式 2：Claude Code
-将 `SKILL.md` 和 `references/` 复制到项目的 `.claude/skills/active-chrome-mac-skill/`。
+将 `SKILL.md` 和 `references/` 复制到项目的 `.claude/skills/chrome-mac-agent-skill/`。
 
 ---
 
 ## 🧭 仓库架构
 
 ```text
-active-chrome-mac-skill/
+chrome-mac-agent-skill/
 ├── SKILL.md                 # 核心入口：快速指令速查、前置检查与按需路由索引
 ├── README.md                # 英文说明文档
 ├── README_CN.md             # 中文说明文档
@@ -101,4 +101,4 @@ active-chrome-mac-skill/
 
 ## 📄 开源许可证
 
-[MIT](./LICENSE) © 2026 active-chrome-mac-skill contributors.
+[MIT](./LICENSE) © 2026 chrome-mac-agent-skill contributors.

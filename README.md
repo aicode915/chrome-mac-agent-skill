@@ -9,14 +9,14 @@
         \/                    \/          \/                   \/     \/
 ```
 
-# active-chrome-mac-skill
+# chrome-mac-agent-skill
 
 **Agent-Native Skill to control active Google Chrome tabs on macOS without restarting or losing user logins.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![macOS: Supported](https://img.shields.io/badge/macOS-Supported-brightgreen?style=flat-square)](https://apple.com/macos)
-[![Agent Skill](https://img.shields.io/badge/Agent-Skill-blueviolet?style=flat-square)](https://github.com/aicode915/active-chrome-mac-skill)
-[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-success?style=flat-square)](https://github.com/aicode915/active-chrome-mac-skill)
+[![Agent Skill](https://img.shields.io/badge/Agent-Skill-blueviolet?style=flat-square)](https://github.com/aicode915/chrome-mac-agent-skill)
+[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-success?style=flat-square)](https://github.com/aicode915/chrome-mac-agent-skill)
 
 [English](./README.md) • [简体中文](./README_CN.md)
 
@@ -35,7 +35,7 @@ This introduces severe workflow friction:
 
 ---
 
-## 💡 The Solution: `active-chrome-mac-skill`
+## 💡 The Solution: `chrome-mac-agent-skill`
 
 This skill connects your AI Agent directly to your **currently open Google Chrome windows on macOS** via native AppleScript:
 
@@ -49,7 +49,7 @@ This skill connects your AI Agent directly to your **currently open Google Chrom
 
 ## 📊 Feature Comparison
 
-| Capability | Playwright / Puppeteer | Remote Debugging CDP | `active-chrome-mac-skill` 🚀 |
+| Capability | Playwright / Puppeteer | Remote Debugging CDP | `chrome-mac-agent-skill` 🚀 |
 | :--- | :---: | :---: | :---: |
 | **Keeps Active Logins & Cookies** | ❌ No (Isolated) | ⚠️ Only if started with flag | **✅ Yes (100% Intact)** |
 | **Requires Browser Restart** | ❌ Yes | ❌ Yes (Must restart Chrome) | **✅ No (Instant Attach)** |
@@ -65,18 +65,18 @@ This skill connects your AI Agent directly to your **currently open Google Chrom
 Clone or copy this repository into your project's `.agents/skills/` or `.skills/` directory:
 ```bash
 mkdir -p .agents/skills
-git clone https://github.com/aicode915/active-chrome-mac-skill.git .agents/skills/active-chrome-control
+git clone https://github.com/aicode915/chrome-mac-agent-skill.git .agents/skills/active-chrome-control
 ```
 
 ### Option 2: Claude Code
-Copy `SKILL.md` and the `references/` directory into your project's `.claude/skills/active-chrome-mac-skill/`.
+Copy `SKILL.md` and the `references/` directory into your project's `.claude/skills/chrome-mac-agent-skill/`.
 
 ---
 
 ## 🧭 Repository Structure
 
 ```text
-active-chrome-mac-skill/
+chrome-mac-agent-skill/
 ├── SKILL.md                 # Entrypoint: Quick cheatsheet, prerequisites, and on-demand router
 ├── README.md                # Human documentation (English)
 ├── README_CN.md             # Human documentation (Chinese)
@@ -127,4 +127,4 @@ To allow AppleScript to run JavaScript in Google Chrome:
 
 ## 📄 License
 
-[MIT](./LICENSE) © 2026 active-chrome-mac-skill contributors.
+[MIT](./LICENSE) © 2026 chrome-mac-agent-skill contributors.

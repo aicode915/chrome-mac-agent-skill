@@ -1,9 +1,9 @@
 ---
-name: active-chrome-mac-skill
+name: chrome-mac-agent-skill
 description: "Controls and inspects currently active Google Chrome tabs on macOS via native AppleScript without restarting Chrome, launching separate browser profiles, or losing active user logins and cookies. Use when an AI Agent needs to interact with the user's live browser sessions."
 ---
 
-# Active Chrome macOS Controller Skill
+# Chrome Mac Agent Skill
 
 Control and inspect the user's **currently active Google Chrome tabs on macOS** directly. Unlike Playwright or Puppeteer which spawn isolated, cookie-less browser instances, this skill communicates with the running Chrome process via native macOS AppleScript, **preserving all active logins, enterprise SSO sessions, cookies, and local state with zero restarts**.
 
