@@ -49,13 +49,34 @@ This skill connects your AI Agent directly to your **currently open Google Chrom
 
 ## 📊 Feature Comparison
 
-| Capability | Playwright / Puppeteer | Remote Debugging CDP | `chrome-mac-agent-skill` 🚀 |
-| :--- | :---: | :---: | :---: |
-| **Keeps Active Logins & Cookies** | ❌ No (Isolated) | ⚠️ Only if started with flag | **✅ Yes (100% Intact)** |
-| **Requires Browser Restart** | ❌ Yes | ❌ Yes (Must restart Chrome) | **✅ No (Instant Attach)** |
-| **External Dependencies** | ❌ Heavy (Chromium/Node/Pip) | ⚠️ Needs WebSocket client | **✅ Zero (Built-in osascript)** |
-| **Agent Skill Compatibility** | ⚠️ Needs MCP Server | ⚠️ Needs MCP Server | **✅ Direct Agent Markdown Skill** |
-| **Bypasses "Leave Site?" Dialogs** | ⚠️ Complex handler | ⚠️ Needs CDP event listener | **✅ One-line Native Bypass** |
+| Capability | Playwright / Puppeteer | Remote Debugging (CDP) | OS "Computer Use" (Vision + Mouse) | `chrome-mac-agent-skill` 🚀 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Keeps Active Logins & Cookies** | ❌ No (Isolated) | ⚠️ Only if started with flag | ✅ Yes (Shares screen) | **✅ Yes (100% Live)** |
+| **Silent Background Execution** | ⚠️ Headless only | ⚠️ If port opened | ❌ **No (Steals mouse & focus)** | **✅ Yes (Zero mouse hijack)** |
+| **Action Speed** | ~1 - 3s | ~500ms | ❌ **Slow (5 - 10s per click)** | **⚡ Blazing Fast (<50ms)** |
+| **Token & Cost Footprint** | Low (HTML) | Low (HTML) | ❌ **High (Thousands of Vision Tokens)** | **💎 Optimal (Zero Image Tokens)** |
+| **System Permissions Required** | None | None | ❌ **High (Screen Recording & Accessibility)** | **🔒 Minimal (Chrome Menu Toggle Only)** |
+| **Precision** | High | High | ⚠️ **Prone to Retina coordinate drift** | **🎯 100% Deterministic (DOM Level)** |
+| **Requires Browser Restart** | ❌ Yes | ❌ Yes (Must restart Chrome) | ✅ No | **✅ No (Instant Attach)** |
+
+---
+
+## 🥊 Why not OS-level "Computer Use" (Screenshots + Mouse Clicks)?
+
+While modern multimodal models (like Claude 3.5 / 3.7 Computer Use) can physically see the screen and click coordinates, using "Computer Use" for routine browser automation is often like using a sledgehammer to crack a nut:
+
+1. **Mouse Hijacking vs. True Background Silence**:
+   * *Computer Use*: Forces Chrome to stay frontmost. The agent moves your physical cursor around the screen, rendering your computer unusable while the task is executing.
+   * *`chrome-mac-agent-skill`*: **100% background silent**. You can write code, watch videos, or minimize Chrome—the agent interacts behind the scenes without touching your mouse or stealing focus.
+2. **Speed & Latency**:
+   * *Computer Use*: Every single click requires: *Capture Screenshot -> Upload Image -> Vision Model Reasoning -> Coordinate Math -> Move Cursor -> Click -> Wait -> Verify Screenshot* (~5 to 10 seconds per step).
+   * *`chrome-mac-agent-skill`*: Directly targets DOM nodes via native IPC in **under 50 milliseconds**.
+3. **Token & Dollar Savings**:
+   * *Computer Use*: Streams full-resolution 2K/4K screenshots every turn, consuming thousands of vision tokens per interaction.
+   * *`chrome-mac-agent-skill`*: **Zero visual token overhead**. Executes pure, surgical JavaScript expressions.
+4. **Least-Privilege Security**:
+   * *Computer Use*: Demands high-risk macOS system permissions (**Screen Recording** to see everything on your display and **Accessibility** to control global input).
+   * *`chrome-mac-agent-skill`*: **Never needs macOS Screen Recording permissions**. Operates strictly inside Google Chrome via native Apple Events.
 
 ---
 
