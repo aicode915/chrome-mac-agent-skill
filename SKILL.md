@@ -35,6 +35,7 @@ To save context tokens, this skill is split into focused scenario modules. **Rea
 | **DOM & Elements** | Need to extract page text/HTML, fill forms, or click buttons | [`references/page-interaction.md`](./references/page-interaction.md) |
 | **Dialogs & Alerts** | Dealing with "Leave site?" / "Reload site?" sheets or dialogs | [`references/dialog-handling.md`](./references/dialog-handling.md) |
 | **Background Keep-Alive** | Page pauses when switching tabs or monitors focus loss | [`references/background-alive.md`](./references/background-alive.md) |
+| **SPAs & Complex Web** | Virtual lists, Draft.js rich text, client-side routing, or AppleScript missing-value traps | [`references/spa-and-complex-web.md`](./references/spa-and-complex-web.md) |
 
 ---
 

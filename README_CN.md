@@ -43,6 +43,7 @@
 - 🔑 **无缝继承所有登录态**：Google 账号、企业 SSO 门户、GitHub、内网管理后台等所有 Cookie 完好无损。
 - 🪶 **纯 Markdown 零依赖**：无需安装任何 `pip` 或 `npm` 依赖包，利用 macOS 内置的 `osascript` 毫秒级执行。
 - 🛡 **原生系统弹窗与离开拦截破解**：内置自动剥离 `beforeunload` 锁，并支持自动点击 macOS 系统级确认弹窗（“重新加载此网站？”）。
+- ⚡ **现代 SPA 与复杂富文本深度适配**：内置虚拟长列表滚动采集、客户端路由无刷新同步、Draft.js/Lexical 复杂富文本状态同步及 AppleScript 安全防吞没机制。
 - 📦 **模块化渐进式加载（Progressive Disclosure）**：主干仅保留核心指令，深度疑难场景按需读取，极致节省大模型 Context Token。
 
 ---

@@ -43,6 +43,7 @@ This skill connects your AI Agent directly to your **currently open Google Chrom
 - 🔑 **Preserves All Active Sessions**: Keeps your Google accounts, enterprise SSO portals, GitHub, and social logins intact.
 - 🪶 **Zero External Dependencies**: Pure Markdown instruction set leveraging macOS built-in `osascript`. No `npm install`, no `pip install`.
 - 🛡 **Native Sheet & Dialog Handling**: Built-in recipes to bypass `beforeunload` blockers and automatically dismiss native macOS dialogs.
+- ⚡ **Deep SPA & Complex Rich-Text Support**: Built-in recipes for virtual list incremental scrolling, client-side route sync, Draft.js/Lexical rich-text state handling, and AppleScript defensive IIFE serialization.
 - 📦 **Modular Progressive Disclosure**: Split into scenario-specific reference files to conserve AI context tokens.
 
 ---
